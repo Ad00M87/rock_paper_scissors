@@ -1,0 +1,34 @@
+.one-three {
+  width: 32%;
+  float: left;
+  margin-left: 15px;
+}
+
+.one-three button {
+  display: block;
+}
+
+h1 {
+  text-align: center;
+}
+h2 {
+  text-align: center;
+}
+
+.one-two {
+  clear: both;
+}
+
+.yourChoice {
+  float: left;
+}
+
+.compChoice {
+  float: right;
+}
+
+.runProgram {
+  margin: 0 auto;
+  border: 4px solid black;
+  margin-top: 150px;
+}
