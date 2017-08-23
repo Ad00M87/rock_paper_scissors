@@ -1,3 +1,8 @@
+header {
+  background: rgba(100, 100, 100, .5);
+  width: 100%;
+}
+
 .one-three {
   width: 32%;
   float: left;
@@ -19,25 +24,34 @@
 
 .tally {
   display: inline-block;
-  border: 2px solid black;
+  border: 10px dotted rgb(24, 100, 200);
   border-radius: 10px;
   text-align: center;
-  width: 100%;
+  width: 98%;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background: rgb(10, 50, 250);
+  color: white;
 }
 
 .rock {
   border: 10px solid rgb(24, 100, 200);
   border-radius: 20px;
+  margin: 10px 0 10px 90px;
 }
 
 .paper {
   border: 10px solid rgb(24, 100, 200);
   border-radius: 20px;
+  margin: 10px 0 10px 90px;
 }
 
 .scissors {
   border: 10px solid rgb(24, 100, 200);
   border-radius: 20px;
+  margin: 10px 0 10px 100px;
 }
 
 h1 {
