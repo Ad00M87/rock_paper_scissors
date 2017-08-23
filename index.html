@@ -11,29 +11,43 @@
       <h2>Choose your fate!</h2>
     </header>
     <main>
+
+
+
+
       <!-- buttons to choose -->
       <div class="one-three">
         <image id="pic" src="images/Rock.png" width="200px" height="200px"/>
-        <button id="rock" onclick="document.getElementById('yourChoice').src='images/Rock.png'">Rock</button>
+        <button id="rock" onclick="document.getElementById('yourChoice').src='images/Rock.png'; getRandomImage(imgArray); compare(document.getElementById('yourChoice').src, document.getElementById('compChoice').src)">Rock</button>
       </div>
       <div class="one-three">
         <image id="pic" src="images/Paper.png" width="200px" height="200px"/>
-        <button id="paper" onclick="document.getElementById('yourChoice').src='images/Paper.png'">Paper</button>
+        <button id="paper" onclick="document.getElementById('yourChoice').src='images/Paper.png'; getRandomImage(imgArray); compare(document.getElementById('yourChoice').src, document.getElementById('compChoice').src)">Paper</button>
       </div>
       <div class="one-three">
         <image id="pic" src="images/Scissors.png" width="200px" height="200px"/>
-        <button id="scissors" onclick="document.getElementById('yourChoice').src='images/Scissors.png'">Scissors</button>
+        <button id="scissors" onclick="document.getElementById('yourChoice').src='images/Scissors.png'; getRandomImage(imgArray); compare(document.getElementById('yourChoice').src, document.getElementById('compChoice').src)">Scissors</button>
       </div>
 
-      <div class="one-three">
-        <image id="yourChoice" class="yourChoice" src="images/yourChoice.png" width="400px" height="400px"/>
+
+
+
+
+
+      <div class="one-two">
+        <image id="yourChoice" class="yourChoice" src="images/yourChoice.png" width="300px" height="300px"/>
       </div>
-        <div class="one-three">
-        <button class="runProgram">FIGHT!</button>
+      <div class="one-two">
+        <image id="winner" class="winner" src="images/white.png" width="300px" height="300px"/>
       </div>
-      <div class="one-three">
-        <image id="compChoice" class="compChoice" src="images/compChoice.png" width="400px" height="400px"/>
+      <div class="one-two">
+        <image id="compChoice" class="compChoice" src="images/compChoice.png" width="300px" height="300px"/>
       </div>
+
+
+
+
+
 
     </main>
     <footer>

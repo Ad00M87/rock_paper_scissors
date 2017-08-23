@@ -4,8 +4,11 @@
   margin-left: 15px;
 }
 
-.one-three button {
-  display: block;
+.one-two {
+  width: 32%;
+  /*border: 1px solid black;*/
+  display: inline;
+  text-align: center;
 }
 
 h1 {
@@ -15,16 +18,18 @@ h2 {
   text-align: center;
 }
 
-.one-two {
-  clear: both;
-}
-
 .yourChoice {
   float: left;
+  margin-left: 50px;
+}
+
+.winner{
+  margin-left: 175px;
 }
 
 .compChoice {
   float: right;
+  margin-right: 50px;
 }
 
 .runProgram {
