@@ -9,6 +9,34 @@
     <header>
       <h1>Welcome to Rock Paper Scissors!</h1>
       <h2>Choose your fate!</h2>
+
+
+        <div class="tally">
+        <div class="one-three">
+          <p id="wins">Wins: 0</p>
+        </div>
+        <div class="one-three">
+          <p id="losses">Losses: 0</p>
+        </div>
+        <div class="one-three">
+          <p id="ties">Draws: 0</p>
+        </div>
+
+        <div class="tally">
+        <div class="one-three">
+          <p id="winPercent">Win Percent: 0</p>
+        </div>
+        <div class="one-three">
+          <p id="lossPercent">Loss Percent: 0</p>
+        </div>
+        <div class="one-three">
+          <p id="tiesPercent">Draw Percent: 0</p>
+        </div>
+
+        <button id="clear" class="btn" onclick="clearCount()">Clear Stats</button>
+      </div>
+
+
     </header>
     <main>
 
@@ -17,20 +45,14 @@
 
       <!-- buttons to choose -->
       <div class="one-three">
-        <image id="pic" src="images/Rock.png" width="200px" height="200px"/>
-        <button id="rock" onclick="document.getElementById('yourChoice').src='images/Rock.png'; getRandomImage(imgArray); compare(document.getElementById('yourChoice').src, document.getElementById('compChoice').src)">Rock</button>
+        <image id="pic" class="rock" src="images/Rock.png" width="200px" height="200px" onclick="document.getElementById('yourChoice').src='images/Rock.png'; getRandomImage(imgArray); compare(document.getElementById('yourChoice').src, document.getElementById('compChoice').src)"/>
       </div>
       <div class="one-three">
-        <image id="pic" src="images/Paper.png" width="200px" height="200px"/>
-        <button id="paper" onclick="document.getElementById('yourChoice').src='images/Paper.png'; getRandomImage(imgArray); compare(document.getElementById('yourChoice').src, document.getElementById('compChoice').src)">Paper</button>
+        <image id="pic" class="paper" src="images/Paper.png" width="200px" height="200px" onclick="document.getElementById('yourChoice').src='images/Paper.png'; getRandomImage(imgArray); compare(document.getElementById('yourChoice').src, document.getElementById('compChoice').src)"/>
       </div>
       <div class="one-three">
-        <image id="pic" src="images/Scissors.png" width="200px" height="200px"/>
-        <button id="scissors" onclick="document.getElementById('yourChoice').src='images/Scissors.png'; getRandomImage(imgArray); compare(document.getElementById('yourChoice').src, document.getElementById('compChoice').src)">Scissors</button>
+        <image id="pic" class="scissors" src="images/Scissors.png" width="200px" height="200px" onclick="document.getElementById('yourChoice').src='images/Scissors.png'; getRandomImage(imgArray); compare(document.getElementById('yourChoice').src, document.getElementById('compChoice').src)"/>
       </div>
-
-
-
 
 
 
@@ -43,8 +65,6 @@
       <div class="one-two">
         <image id="compChoice" class="compChoice" src="images/compChoice.png" width="300px" height="300px"/>
       </div>
-
-
 
 
 

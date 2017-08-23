@@ -18,16 +18,51 @@ function getRandomImage(imgArray) {
     document.getElementById('compChoice').src = imgStr;
   }
 
-var winArray = [];
+var Wins = 0;
+var Losses = 0;
+var Draw = 0;
 
-winArray[0] = new Image();
-winArray[0] = 'draw.png';
+function userWinCount() {
+    Wins += 1;
+    document.getElementById('wins').innerHTML = "Wins: " + Wins;
+}
 
-winArray[1] = new Image();
-winArray[1] = 'userWin.png';
+function compWinCount() {
+    Losses += 1;
+    document.getElementById('losses').innerHTML = "Losses: " + Losses;
+}
 
-winArray[2] = new Image();
-winArray[2] = 'compWin.png';
+function drawCount() {
+    Draw += 1;
+    document.getElementById('ties').innerHTML = "Draws: " + Draw;
+}
+
+function winPercent() {
+  var percent = Wins / (Wins + Losses + Draw);
+  document.getElementById('winPercent').innerHTML = "Win Percent: " + percent.toFixed(2);
+}
+
+function lossPercent() {
+  var percent = Losses / (Wins + Losses + Draw);
+  document.getElementById('lossPercent').innerHTML = "Loss Percent: " + percent.toFixed(2);
+}
+
+function tiesPercent() {
+  var percent = Draw / (Wins + Losses + Draw);
+  document.getElementById('tiesPercent').innerHTML = "Draw Percent: " + percent.toFixed(2);
+}
+
+function clearCount() {
+    Wins = 0;
+    Losses = 0;
+    Draw = 0;
+    document.getElementById('wins').innerHTML = "Wins: " + Wins;
+    document.getElementById('losses').innerHTML = "Losses: " + Losses;
+    document.getElementById('ties').innerHTML = "Draws: " + Draw;
+    document.getElementById('winPercent').innerHTML = "Win Percent: 0";
+    document.getElementById('lossPercent').innerHTML = "Loss Percent: 0";
+    document.getElementById('tiesPercent').innerHTML = "Draw Percent: 0";
+}
 
 function userWin() {
     document.getElementById('winner').src = '../images/userWin.png';
@@ -41,42 +76,54 @@ function draw() {
     document.getElementById('winner').src = '../images/draw.png';
   }
 
-// function compareRock(elementSrc) {
-//   if (document.getElementById('yourChoice').src )
-// }
-//second option.
-// var userChoice = prompt("Do you choose rock, paper or scissors?");
-// var computerChoice = Math.random();
-// if (computerChoice < 0.34) {
-// 	computerChoice = "rock";
-// } else if(computerChoice <= 0.67) {
-// 	computerChoice = "paper";
-// } else {
-// 	computerChoice = "scissors";
-// } console.log("Computer: " + computerChoice);
-//
-// compare(document.getElementById('yourChoice').src, document.getElementById('compChoice').src);
-
 function compare(choice1, choice2) {
     if (choice1 === choice2) {
         draw();
+        drawCount();
+        winPercent();
+        lossPercent();
+        tiesPercent();
     } else if (choice1 === 'http://127.0.0.1:3000/images/Rock.png') {
         if (choice2 === 'http://127.0.0.1:3000/images/Scissors.png') {
             userWin();
+            userWinCount();
+            winPercent();
+            lossPercent();
+            tiesPercent();
         } else {
             compWin();
+            compWinCount();
+            winPercent();
+            lossPercent();
+            tiesPercent();
         }
     } else if (choice1 === 'http://127.0.0.1:3000/images/Paper.png') {
         if (choice2 === 'http://127.0.0.1:3000/images/Rock/png') {
             userWin();
+            userWinCount();
+            winPercent();
+            lossPercent();
+            tiesPercent();
         } else {
             compWin();
+            compWinCount();
+            winPercent();
+            lossPercent();
+            tiesPercent();
         }
     } else if (choice1 === 'http://127.0.0.1:3000/images/Scissors.png') {
         if (choice2 === 'http://127.0.0.1:3000/images/Paper.png') {
             userWin();
+            userWinCount();
+            winPercent();
+            lossPercent();
+            tiesPercent();
         } else {
             compWin();
+            compWinCount();
+            winPercent();
+            lossPercent();
+            tiesPercent();
         }
     }
 }

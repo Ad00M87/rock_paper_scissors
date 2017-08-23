@@ -4,11 +4,40 @@
   margin-left: 15px;
 }
 
+.one-three image {
+  border: 3px solid rgb(20, 100, 200);
+  border-radius: 4px;
+}
+
 .one-two {
   width: 32%;
   /*border: 1px solid black;*/
   display: inline;
   text-align: center;
+  clear: both;
+}
+
+.tally {
+  display: inline-block;
+  border: 2px solid black;
+  border-radius: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.rock {
+  border: 10px solid rgb(24, 100, 200);
+  border-radius: 20px;
+}
+
+.paper {
+  border: 10px solid rgb(24, 100, 200);
+  border-radius: 20px;
+}
+
+.scissors {
+  border: 10px solid rgb(24, 100, 200);
+  border-radius: 20px;
 }
 
 h1 {
