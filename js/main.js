@@ -83,8 +83,8 @@ function compare(choice1, choice2) {
         winPercent();
         lossPercent();
         tiesPercent();
-    } else if (choice1 === 'http://127.0.0.1:3000/images/Rock.png') {
-        if (choice2 === 'http://127.0.0.1:3000/images/Scissors.png') {
+    } else if (choice1 === window.location.href + 'images/Rock.png') {
+        if (choice2 === window.location.href + 'images/Scissors.png') {
             userWin();
             userWinCount();
             winPercent();
@@ -97,8 +97,8 @@ function compare(choice1, choice2) {
             lossPercent();
             tiesPercent();
         }
-    } else if (choice1 === 'http://127.0.0.1:3000/images/Paper.png') {
-        if (choice2 === 'http://127.0.0.1:3000/images/Rock/png') {
+    } else if (choice1 === window.location.href + 'images/Paper.png') {
+        if (choice2 === window.location.href + 'images/Rock/png') {
             userWin();
             userWinCount();
             winPercent();
@@ -111,8 +111,8 @@ function compare(choice1, choice2) {
             lossPercent();
             tiesPercent();
         }
-    } else if (choice1 === 'http://127.0.0.1:3000/images/Scissors.png') {
-        if (choice2 === 'http://127.0.0.1:3000/images/Paper.png') {
+    } else if (choice1 === window.location.href + 'images/Scissors.png') {
+        if (choice2 === window.location.href + 'images/Paper.png') {
             userWin();
             userWinCount();
             winPercent();

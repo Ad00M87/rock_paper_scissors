@@ -64,15 +64,19 @@ h2 {
 .yourChoice {
   float: left;
   margin-left: 50px;
+  border: 10px solid rgb(24, 100, 200);
+  border-radius: 20px;
 }
 
 .winner{
-  margin-left: 175px;
+  margin-left: 140px;
 }
 
 .compChoice {
   float: right;
   margin-right: 50px;
+  border: 10px solid rgb(24, 100, 200);
+  border-radius: 20px;
 }
 
 .runProgram {
