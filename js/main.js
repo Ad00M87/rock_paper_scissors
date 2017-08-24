@@ -98,7 +98,7 @@ function compare(choice1, choice2) {
             tiesPercent();
         }
     } else if (choice1 === window.location.href + 'images/Paper.png') {
-        if (choice2 === window.location.href + 'images/Rock/png') {
+        if (choice2 === window.location.href + 'images/Rock.png') {
             userWin();
             userWinCount();
             winPercent();
